@@ -1,0 +1,20 @@
+<!-- gallery/templates/gallery/gallery.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div>
+        {% for image in images %}
+        <div>
+            <h2>{{ image.title }}</h2>
+            <img src="{{ image.image.url }}" alt="{{ image.title }}" width="300">
+            <p>{{ image.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
