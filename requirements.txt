@@ -1,0 +1,8 @@
+django
+gunicorn
+requests
+utils
+whitenoise
+django-widget-tweaks
+django-storages
+six
